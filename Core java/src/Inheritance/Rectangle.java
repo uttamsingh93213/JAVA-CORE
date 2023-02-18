@@ -3,7 +3,7 @@ package Inheritance;
 public class Rectangle extends Shape {
     private int length;
     private int width;
-   // private int area;
+   
 	
     public int getLength() {
     	return length;
@@ -17,8 +17,8 @@ public class Rectangle extends Shape {
     public void setWidth(int width) {
     	this.width=width;
     }
-    public int area() {
-     int area = getLength()*getWidth();
+    public double area() {
+     double area = length*width;
         return area;
         
       }

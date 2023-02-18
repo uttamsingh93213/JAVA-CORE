@@ -17,16 +17,20 @@ public class Arrays {
 	s1[1]=new Circle();
 	Circle c=(Circle)s1[1];
 	c.setradius(45);
-
-	System.out.println("Cirle "+c.getArea());
+    c.area();
+	System.out.println("Cirle "+c.area());
 	
 	s1[2]=new Triangle();
 	Triangle t=(Triangle)s1[2];
 	t.setBase(30);
 	t.setHight(20);
-	t.getArea();
-	System.out.println("Triangle "+t.getArea());
+	t.area();
+	System.out.println("Triangle "+t.area());
+	for(int i=0;i<s1.length;i++){
 	
+	sum=sum+s1[i].area();
+	
+	}System.out.println("All area :"+sum);
 	
 }
 }

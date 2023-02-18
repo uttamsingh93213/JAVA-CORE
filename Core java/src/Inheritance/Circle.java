@@ -11,8 +11,8 @@ public class Circle extends Shape{
     public void setradius(int radius) {
     	this.radius=radius;
     }
-    public float getArea() {
-    	area=(PI)*(getRadius()*getRadius());
+    public double area() {
+    	area=(PI)*(radius*radius);
     	return area;	
     }
     
